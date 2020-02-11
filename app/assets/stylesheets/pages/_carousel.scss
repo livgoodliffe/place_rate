@@ -28,5 +28,13 @@
 .heading-text {
   font-size: 80px;
   font-weight: 700;
-  color: $dark-purple;
+  color: $gray;
+}
+
+.full-screen {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0
 }
