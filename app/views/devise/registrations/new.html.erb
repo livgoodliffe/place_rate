@@ -7,22 +7,52 @@
 
   <br>
 
+  <hr>
+
+  <br>
+
+  <p>Which company do you work for?</p>
+
+  <br>
+
+  <hr>
+
+  <br>
+
 <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= f.error_notification %>
 
+
+
   <div class="form-inputs">
+    <%= f.input :first_name,
+                placeholder: "first name",
+                label: false,
+                required: true,
+                autofocus: true,
+                input_html: { class: "input inset", autocomplete: "first name" }%>
+    <%= f.input :last_name,
+                placeholder: "last name",
+                label: false,
+                required: true,
+                autofocus: true,
+                input_html: { class: "input inset", autocomplete: "last name" }%>
     <%= f.input :email,
                 placeholder: "email",
                 label: false,
                 required: true,
                 autofocus: true,
                 input_html: { class: "input inset", autocomplete: "email" }%>
-    <%= f.input :company,
-                placeholder: "company",
-                label: false,
-                required: true,
-                autofocus: true,
-                input_html: { class: "input inset", autocomplete: "email" }%>
+
+
+    <div class="field">
+      <%= f.fields_for :company do |builder| %>
+        <%= builder.label :company_name %><br />
+        <%= builder.text_field :company_name %>
+      <%end%>
+    </div>
+
+
     <%= f.input :password,
                 placeholder: "password",
                 label: false,
