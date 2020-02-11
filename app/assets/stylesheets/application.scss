@@ -2,6 +2,7 @@
 @import "config/fonts";
 @import "config/colors";
 @import "config/bootstrap_variables";
+@import "config/other";
 
 // External libraries
 @import "bootstrap/scss/bootstrap";
@@ -11,3 +12,15 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+body {
+  font-weight: 500;
+}
+
+h6 {
+  font-weight: 600;
+}
+
+p {
+  font-size: 12px;
+}

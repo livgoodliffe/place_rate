@@ -1,0 +1,27 @@
+.carousel-item {
+  background-color: $light-gray;
+  height: 600px;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.carousel-text {
+  position: absolute;
+  top: 420px;
+  left: 0;
+  right: 0;
+  margin: 15px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.carousel-indicators li {
+  background-color: $dark-purple;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
