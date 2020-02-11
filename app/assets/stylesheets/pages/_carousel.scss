@@ -1,3 +1,8 @@
+.carousel-container {
+  height: 100vh;
+  position: relative;
+}
+
 .carousel-item {
   background-color: $light-gray;
   height: 85vh;
@@ -9,7 +14,7 @@
 
 .carousel-text {
   position: absolute;
-  top: 420px;
+  top: 320px;
   left: 0;
   right: 0;
   margin: 15px;
@@ -37,5 +42,5 @@
   top: 0;
   bottom: 0;
   left: 0;
-  right: 0
+  right: 0;
 }

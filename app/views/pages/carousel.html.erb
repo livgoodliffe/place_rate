@@ -83,11 +83,11 @@
 
     <% if user_signed_in? %>
       <%= link_to home_path do %>
-        <button type="button" class="btn btn-purple btn-lg btn-block">GET STARTED</button>
+        <button type="button" class="btn btn-purple btn-lg btn-block btn-bottom" >GET STARTED</button>
       <% end %>
     <% else %>
       <%= link_to new_user_session_path do %>
-        <button type="button" class="btn btn-purple btn-lg btn-block">GET STARTED</button>
+        <button type="button" class="btn btn-purple btn-lg btn-block btn-bottom">GET STARTED</button>
       <% end %>
     <% end %>
 
