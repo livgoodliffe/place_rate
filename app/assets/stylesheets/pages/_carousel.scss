@@ -5,7 +5,7 @@
 
 .carousel-item {
   background-color: $light-gray;
-  height: 85vh;
+  height: 43rem;
   width: 100%;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -14,12 +14,11 @@
 
 .carousel-text {
   position: absolute;
-  top: 320px;
+  top: 32rem;
   left: 0;
   right: 0;
   margin: 15px;
   text-align: justify;
-  text-justify: inter-word;
 }
 
 .carousel-indicators li {
